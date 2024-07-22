@@ -1,31 +1,98 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Raleway', sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(44, 62, 80); 
+  color: rgb(44, 62, 80);
 }
 
-.App-link {
-  color: #61dafb;
+#quote-box {
+	border-radius: 3px;
+	position: relative;
+	width: 450px;
+	padding: 40px 50px 20px 50px;
+	display: table;
+	background-color: #fff;
 }
 
-.heart {
-  color: #ff0000;
+#quote-box .quote-text {
+	text-align: center;
+	width: 450px;
+	height: auto;
+	clear: both;
+	font-weight: 500;
+	font-size: 1.75em;
 }
 
-.small {
-  font-size: 0.75rem;
+#quote-box .quote-author {
+	width: 450px;
+	height: auto;
+	clear: both;
+	padding-top: 20px;
+	font-size: 1em;
+	text-align: right;
+}
+
+#tweet-quote{
+  width: 100px;
+  height: 100px;
+}
+
+#quote-box .buttons {
+	width: 450px;
+	margin: auto;
+	display: block;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  padding:10px;
+  margin-top:30px;
+  color:white;
+  border-radius:10px;
+  background-color: rgb(44, 62, 80);
+  fill: currentColor;
+}
+
+
+.footer {
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: 15px auto 10px auto;
+	font-size: 0.8em;
+	color: #fff;
+  background-color: rgb(44, 62, 80);
+}
+
+.footer a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #fff;
+}
+
+#quote-box .buttons #new-quote {
+	float: right;
+}
+
+#quote-box .buttons .button:hover {
+	opacity: 0.9;
+}
+
+#quote-box .buttons .button {
+	height: 38px;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+  background-color: rgb(44, 62, 80);
+	outline: none;
+	font-size: 0.85em;
+	padding: 8px 18px 6px 18px;
+	margin-top: 30px;
+	opacity: 1;
+	cursor: pointer;
 }

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { StrictMode } from "https://esm.sh/react";
+import { createRoot } from "https://esm.sh/react-dom/client";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 
@@ -43,19 +46,16 @@ const QuoteMachine = () => {
         </p>
         <div className="buttons">
           <a
-            id="tweet-quot"
+            id="tweet-quote"
             className="btn btn-info"
             href={`https://twitter.com/intent/tweet?text=${quote} - ${author}`}
             target="_top"
             rel="noopener noreferrer"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-            </svg>
 
-            &nbsp;
+            <FontAwesomeIcon icon={faEdit} />
+           
           </a>
-
 
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -87,13 +87,4 @@ const QuoteBox = () => {
   );
 };
 
-const App = () => {
-  return (
-    <div className="App">
-      <QuoteBox />
-    </div>
-  );
-};
-
-export default App;
-
+export default Quote;
